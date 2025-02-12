@@ -3,7 +3,7 @@ FROM ${BUILD_FROM}
 ARG ARCH
 
 # Set shell
-#SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Install speech-to-phrase
 ARG SPEECH_TO_PHRASE_VERSION
