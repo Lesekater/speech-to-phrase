@@ -21,12 +21,12 @@ services:
       - 10300:10300
     volumes:
       - type: bind
-        source: ${apps_storage}/speech-to-phrase/models # make sure your user can write to this
+        source: ${apps_storage}/models # make sure your user can write to this
         target: /data/models
       - type: bind
-        source: ${apps_storage}/speech-to-phrase/train # make sure your user can write to this
+        source: ${apps_storage}/train # make sure your user can write to this
         target: /data/train
       - type: bind
-        source: ${apps_storage}/speech-to-phrase/custom-sentences
+        source: ${apps_storage}/custom-sentences
         target: /data/custom_sentences
 networks: {}
